@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 
-ALLOWED_HOSTS = ["localhost"] if DEBUG else ["*"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"] if DEBUG else ["*"]
 
 INSTALLED_APPS = INSTALLED_APPS
 # REST_FRAMEWORK = REST_FRAMEWORK
